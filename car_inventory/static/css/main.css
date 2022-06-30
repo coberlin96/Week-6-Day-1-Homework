@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+.ct-nav img{
+    width:25%;
+    max-width: 100%;
+    margin-left: 2vw;
+}
+
 ul#horizontal-list{
     min-width: 696px;
     list-style: none;
@@ -25,7 +31,12 @@ ul#horizontal-list a:nth-last-child(1){
 /* End of Nav Styles */
 
 #header-text{
-    padding: 2vw;
+    padding:2vw;
+}
+
+.header-image{
+    width:82%;
+    max-width: 100%;
 }
 
 /* Start of Middle Section Styles */
@@ -40,10 +51,21 @@ ul#horizontal-list a:nth-last-child(1){
 /* End of Middle Section Styles */
 
 /* Start of Features Section Styles */
+#garage1-image,#garage2-image,#garage3-image{
+    width: 75%;
+    margin: 8vw;
+}
+
 #features-section{
     margin: 8vw;
 }
 /* End of Features Section */
+
+#supercar-image{
+    width:75%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
 
 /* Footer Section Styles */
 .footer-text-flex{

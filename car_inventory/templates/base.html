@@ -13,7 +13,10 @@
 <body>
     <nav class="ct-nav">
         <div>
-            <ul id="header-list">
+            <img src="../static/images/car_logo.webp" alt="website logo">
+        </div>
+        <div>
+            <ul id="horizontal-list">
                 <a href="{{url_for('site.home')}}">
                     <li>Homepage</li>
                 </a>
@@ -23,12 +26,18 @@
                 <a href="{{ url_for('site.profile')}}">
                     <li>Profile</li>
                 </a>
+                {% if current_user.is_authenticated %}
+                <a href="{{ url_for('auth.logout') }}">
+                    <p>Log Out</p>
+                </a>
+                {% else %}
                 <a href="{{url_for('auth.signin')}}">
                     <li>Login</li>
                 </a>
                 <a href="{{url_for('auth.signup')}}">
                     <li>Sign Up</li>
                 </a>
+                {% endif %}
             </ul>
         </div>
     </nav>
